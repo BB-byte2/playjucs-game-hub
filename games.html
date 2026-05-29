@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayJucs - Gaming Universe</title>
+    <link rel="stylesheet" href="games-style.css">
+</head>
+<body>
+
+    <div class="universe-bg">
+        <div class="stars"></div>
+        <div class="nebula"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <span class="logo-icon">🚀</span>
+                <h1>PlayJucs</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#games" class="nav-link">Games</a>
+                <a href="#about" class="nav-link">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">PlayJucs Gaming Universe</h2>
+            <p class="hero-subtitle">Play Amazing Games Directly in Your Browser</p>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section id="games" class="games-section">
+            <h2 class="section-title">Select a Game to Play</h2>
+            
+            <div class="game-selector">
+                <button class="game-btn active" data-game="snake">🐍 Snake Game</button>
+                <button class="game-btn" data-game="flappy">🐦 Flappy Bird</button>
+                <button class="game-btn" data-game="pong">🏓 Pong</button>
+                <button class="game-btn" data-game="breakout">🧱 Breakout</button>
+                <button class="game-btn" data-game="memory">🧠 Memory Match</button>
+                <button class="game-btn" data-game="2048">🔢 2048</button>
+            </div>
+
+            <div class="game-container">
+                <!-- SNAKE GAME -->
+                <div id="snake-game" class="game-frame active">
+                    <canvas id="snakeCanvas" width="400" height="400"></canvas>
+                    <div class="game-controls">
+                        <button id="snakeStart" class="btn">Start Game</button>
+                        <p>Use Arrow Keys to Move</p>
+                    </div>
+                </div>
+
+                <!-- FLAPPY BIRD GAME -->
+                <div id="flappy-game" class="game-frame">
+                    <canvas id="flappyCanvas" width="400" height="600"></canvas>
+                    <div class="game-controls">
+                        <button id="flappyStart" class="btn">Start Game</button>
+                        <p>Click or Space to Flap</p>
+                    </div>
+                </div>
+
+                <!-- PONG GAME -->
+                <div id="pong-game" class="game-frame">
+                    <canvas id="pongCanvas" width="600" height="400"></canvas>
+                    <div class="game-controls">
+                        <button id="pongStart" class="btn">Start Game</button>
+                        <p>Move Mouse Up/Down to Control Paddle</p>
+                    </div>
+                </div>
+
+                <!-- BREAKOUT GAME -->
+                <div id="breakout-game" class="game-frame">
+                    <canvas id="breakoutCanvas" width="400" height="500"></canvas>
+                    <div class="game-controls">
+                        <button id="breakoutStart" class="btn">Start Game</button>
+                        <p>Move Mouse to Control Paddle</p>
+                    </div>
+                </div>
+
+                <!-- MEMORY GAME -->
+                <div id="memory-game" class="game-frame">
+                    <div class="memory-grid" id="memoryGrid"></div>
+                    <div class="game-controls">
+                        <button id="memoryStart" class="btn">New Game</button>
+                        <p id="memoryScore">Matches: 0/8</p>
+                    </div>
+                </div>
+
+                <!-- 2048 GAME -->
+                <div id="2048-game" class="game-frame">
+                    <div class="game-2048">
+                        <div id="score2048">Score: 0</div>
+                        <div class="grid-2048" id="grid2048"></div>
+                    </div>
+                    <div class="game-controls">
+                        <button id="game2048Start" class="btn">New Game</button>
+                        <p>Use Arrow Keys to Move</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="score-display">
+                <p id="scoreText">Score: 0</p>
+            </div>
+
+        </section>
+
+        <section id="about" class="about-section">
+            <h2 class="section-title">About PlayJucs</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>🎮 PlayJucs Gaming Universe is your destination for classic arcade games, all playable directly in your browser!</p>
+                    <p>✨ No downloads needed. No ads. Just pure gaming fun. Choose a game above and start playing now!</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 PlayJucs Gaming Universe. Play. Have Fun. Repeat.</p>
+        </div>
+    </footer>
+
+    <script src="games-script.js"></script>
+</body>
+</html>
